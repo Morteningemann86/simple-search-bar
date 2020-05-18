@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e84118;
+}
+
+.search-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #353b48;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    animation: pulse 2s infinite;
+    animation-delay: 1s; /* The animation-delay property must come after the animation propperty to work */
+}
+
+.search-bar:hover > .search-txt {
+    width: 240px;
+    padding: 0 20px;
+}
+
+.search-bar:hover {
+    animation: none;
+}
+
+.search-btn {
+    color: #c23616;
+    float: right;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background: #353b48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+    transition-delay: 0.6s;
+}
+
+.search-bar:hover > .search-btn {
+    background: white;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px; /* When set to 0, he search-bar is collapsed and only the search icon appears. .search-bar:hover makes the search-bar fold out */
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(53, 59, 72, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 30px rgba(53, 59, 72, 0.0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(53, 59, 72, 0.0);
+    }
+}
+
+
+
+
+
