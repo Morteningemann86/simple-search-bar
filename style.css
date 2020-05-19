@@ -58,6 +58,12 @@ body {
     width: 0px; /* When set to 0, he search-bar is collapsed and only the search icon appears. .search-bar:hover makes the search-bar fold out */
 }
 
+footer {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(53, 59, 72, 0.4);
